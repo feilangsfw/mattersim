@@ -37,8 +37,11 @@ def download_checkpoint(
         save_folder (str): The local folder to save the checkpoint to.
     """
 
+    # GITHUB_CHECKPOINT_PREFIX = (
+    #     "https://raw.githubusercontent.com/microsoft/mattersim/main/pretrained_models/"
+    # )
     GITHUB_CHECKPOINT_PREFIX = (
-        "https://raw.githubusercontent.com/microsoft/mattersim/main/pretrained_models/"
+        "https://raw.gitmirror.com/microsoft/mattersim/main/pretrained_models/"
     )
     checkpoint_url = GITHUB_CHECKPOINT_PREFIX + checkpoint_name.strip("/")
     save_path = os.path.join(
